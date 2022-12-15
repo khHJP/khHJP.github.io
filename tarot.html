@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarot</title>
+    <script src="js/jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tarot.css">
+</head>
+<body>
+    <!-- 컨테이너시작 -->
+    <div id="container">
+        <!-- mainback 시작 -->
+        <div id="mainback">
+            <div class= "deco">
+                <div class="circle"><img src="images/circle.png" width="200px" alt=""></div>
+            </div>
+            <div id="frame"></div>
+        </div>
+        <!-- mainback 끝 -->
+        <!-- main 시작 -->
+        <section id="main">
+            <!-- header 시작 -->
+            <header>
+                <nav>
+                    <ul class="navi">
+                        <li id="about" class="bottom">
+                            <a href="about.html"><img src="images/bottom_before.png" alt=""></a></li>
+                        <li id="tarot" class="middle">
+                            <a href="tarot.html"><img src="images/middle_before.png" alt=""></a></li>
+                        <li id="mainpage" class="top">
+                            <a href="index.html"><img src="images/top_before.png" alt=""></a></li>
+                        <li id="roadmap" class="middle">
+                            <a href="roadmap.html"><img src="images/middle_before.png" alt=""></a></li>
+                        <li id="join" class="bottom">
+                            <a href="join.html"><img src="images/bottom_before.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- header 끝 -->
+            <!-- content 시작 -->
+            <section id="content">
+                <div class="cardwrapper">
+                    <div class="card" id="moonology"></div>
+                    <div class="card" id="universal"></div>
+                    <div class="card" id="romantic"></div>
+                    <div class="card" id="lenomand"></div>
+                    <div class="card" id="moonchild"></div>
+                    <div class="card" id="horoscope"></div>
+                </div>
+                <div class="cardcontents">
+                    <div id="ct1">
+                        <button class="close"></button>
+                        <p>
+                            <h1>Moonology</h1>
+                            <hr>
+                            <img src="images/moonology_card.png" style="width:200px" alt="" class="imgwrap">
+                            <br><br>
+                            <div class="textwrap">
+                                    <table class="texttable" style="text-align: left; margin: 10px">
+                                        <tbody>
+                                            <tr>
+                                                <th>제조사</th>
+                                                <td>Hay House</td>
+                                            </tr>
+                                            <tr>
+                                                <th>가격</th>
+                                                <td>25,200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>저자</th>
+                                                <td>Yasmin Boland</td>
+                                            </tr>
+                                            <tr>
+                                                <th>유형</th>
+                                                <td>oracle</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </p>
+                    </div>
+                    <div id="ct2"></div>
+                    <div id="ct3"></div>
+                    <div id="ct4"></div>
+                    <div id="ct5"></div>
+                    <div id="ct6"></div>
+                </div>
+            </section>
+            <!-- content 끝 -->
+            <!-- deco 시작 -->
+            <div class= "deco">
+                <div class="fstmobile"><img src="images/mobile.png" width="250px" alt=""></div>
+                <div class="secmobile"><img src="images/mobile2.png" width="130px" alt=""></div>
+            </div>
+            <!-- deco 끝 -->
+        </section>
+        <!-- main 끝 -->
+    </div>   
+    <!-- 컨테이너 끝 -->
+    <script src="js/main.js"></script>
+    <script src="js/tarot.js"></script>
+</body>
+</html>

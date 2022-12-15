@@ -1,0 +1,146 @@
+        #main {overflow: hidden;}
+
+        .card {
+            width: 200px;
+            height: 300px;
+            border-radius: 6%;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            opacity: 0;
+            z-index: 1;
+        }
+        .cardcontents {
+            text-align: center;
+            position: relative;
+        }
+        .cardcontents > div {
+            width: 630px;
+            height: 510px;
+            background-color: rgba(91, 68, 150, 0.763);
+            border-radius: 2%;
+            display: inline-block;
+            opacity: 0;
+            padding: 10px 10px;
+            overflow-y: scroll;
+        }
+
+        .close {
+            position: relative;
+            float: right;
+            padding-right: 5px;
+            font-size: 30px;
+            background-color: rgba(255, 255, 255, 0);
+            border: 0px;
+            color: white;
+        }
+        .close:after {
+            content: "\00d7";
+        }
+        .cardwrapper :first-child {
+            left: 22%;
+            top: 79%;
+            transform: rotate(329deg);
+            transition-duration: .5s;
+        }
+        .cardwrapper :first-child:hover {
+            top: 75%;
+        }
+
+
+        .cardwrapper :nth-child(2){
+            left: 30%;
+            top: 75%;
+            transform: rotate(340deg);
+            transition-duration: .5s;
+        }
+        .cardwrapper :nth-child(2):hover {
+            top: 71%;
+        }
+
+        .cardwrapper :nth-child(3){
+            left: 38%;
+            top: 73%;
+            transform: rotate(351deg);
+            transition-duration: .5s;
+        }
+        .cardwrapper :nth-child(3):hover{
+            top: 69%;
+        }
+
+        .cardwrapper :nth-child(4){
+            left: 46%;
+            top: 74%;
+            transform: rotate(7deg);
+            transition-duration: .5s;
+        }
+        .cardwrapper :nth-child(4):hover{
+            top: 70%;
+        }
+
+        .cardwrapper :nth-child(5){
+            left: 54%;
+            top: 77%;
+            transform: rotate(18deg);
+            transition-duration: .5s;
+        }
+        .cardwrapper :nth-child(5):hover{
+            top: 73%;
+        }
+
+        .cardwrapper :last-child{
+            left: 60%;
+            top: 82%;
+            transform: rotate(32deg);
+            transition-duration: .5s;
+        }
+        .cardwrapper :last-child:hover{
+            top: 78%;
+        }
+
+
+        .card#moonology {
+            background-image: url('../images/moonology.png');
+            background-size: cover;
+        }
+        .card#universal {
+            background-image: url('../images/universal.png');
+            background-size: cover;
+        }
+        .card#romantic {
+            background-image: url('../images/romantic.png');
+            background-size: cover;
+        }
+        .card#lenomand {
+            background-image: url('../images/lenomand.png');
+            background-size: cover;
+        }
+        .card#moonchild {
+            background-image: url('../images/moonchild.png');
+            background-size: cover;
+        }
+        .card#horoscope {
+            background-image: url('../images/horoscope.png');
+            background-size: cover;
+        }
+        .imgwrap {
+            float: left;
+            margin: 40px;
+            margin-top: 70px;
+        }
+
+        .textwrap {
+            margin-left: 300px;
+            margin-top: 90px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        table th {
+            width: 70px;
+        }
+        
+        table td, table th {
+            padding: 7px;
+        }
+        

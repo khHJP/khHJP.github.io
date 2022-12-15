@@ -1,0 +1,124 @@
+#content {
+    position: absolute;
+    z-index: 1;
+    width: 997px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#userId {
+    width: 120px;
+}
+
+[type=password]{
+    width: 120px;
+}
+
+#username {
+    width: 120px;
+}
+
+.phone {
+    width: 40px;
+}
+
+#email {
+    width: 120px;
+}
+
+#tbl-join{
+    transform: translate(-1px,33px);
+    font: 15px 'Noto Sans KR', sans-serif;
+    padding: 5px; text-align: left;
+}
+
+h1 {
+    width: 700px;
+    font: 20px 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+#main {
+    text-align: center;
+}
+
+th {
+    width: 113px;
+    padding: 10px;
+}
+
+/* join버튼 호버 */
+.btn {
+   background-color: rgb(255, 255, 255);
+   border-radius: 10px;
+   padding: 4px 8px;
+   font: 12px 'Montserrat', sans-serif;
+   color: rgb(0, 0, 0);
+}
+.btn:hover {
+    background-color: rgb(243, 191, 47);
+    border-radius: 10px;
+    padding: 4px 8px;
+    font: 12px 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+ }
+ #readbtn {
+    float: right;
+    position: absolute;
+    top: 35px;
+    left: 781px;
+ }
+ #joinbtn {
+    margin-top: 10px;
+ }
+
+ /* memberwrap */
+ .memberwrap {
+    background-color: rgba(255, 255, 255, 0.947);
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    margin: 0 auto;
+    top: -97px;
+    border-radius: 10px;
+    display: none;
+    z-index: 100;
+ }
+ #tbl-member {
+    color: #000;
+    border: 1px solid black;
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 650px;
+ }
+ #tbl-member th, #tbl-member td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px;
+ }
+ .close {
+    float: right;
+ }
+ #tbl-member th {
+    background-color: rgb(42, 27, 72);
+    color: white;
+    font: 14px 'Noto Sans KR', sans-serif;
+ }
+ #tbl-member td {
+        font: 13px 'Noto Sans KR', sans-serif;
+ }
+
+ #tbl-member th:first-child{
+    width: 30px;
+ }
+ #tbl-member th:nth-child(4){
+    width: 60px;
+ }
+ #tbl-member th:nth-child(5){
+    width: 40px;
+ }
+ #tbl-member th:nth-child(6){
+    width: 60px;
+ }

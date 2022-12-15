@@ -1,0 +1,95 @@
+.roadwrapper {
+    position: relative;
+    height: 570px;
+    overflow-y: scroll;
+}
+.roadbtn {
+    background-color: rgba(255, 255, 255, 0);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    text-align: center;
+}
+.roadbtn > span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.roadbtn:nth-child(1){
+    background-color: rgba(56, 35, 96, 0.711);
+    top: 211px;
+    left: 429px;
+    width: 70px;
+    height: 70px;   
+}
+.roadbtn:nth-child(1):hover{
+    background-color: rgb(56, 35, 96);
+}
+
+.roadbtn:nth-child(2){
+    background-color: rgba(240, 191, 29, 0.804);
+    top: 397px;
+    left: 449px;
+    width: 80px;
+    height: 80px;
+}
+.roadbtn:nth-child(2):hover{
+    background-color: rgb(240, 191, 29);
+}
+
+.roadbtn:nth-child(3){
+    border: 2px solid #d0a67b;
+    background-color: #d0a67b75;
+    top: 593px;
+    left: 442px;
+    width: 60px;
+    height: 60px;
+}
+.roadbtn:nth-child(3):hover{
+    background-color: #d0a67b;
+}
+
+.roadbtn:nth-child(4){
+    background-color: rgba(101, 75, 188, 0.527);
+    top: 671px;
+    left: 458px;
+    width: 53px;
+    height: 53px;
+}
+.roadbtn:nth-child(4):hover{
+    background-color: rgb(101, 75, 188);
+}
+
+.txt {
+    width: 300px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.499);
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+}
+.roadbtn:nth-child(1) > p{
+    top: -72px;
+    left: -346px;
+    padding-top: 50px;
+}
+.roadbtn:nth-child(2) > p{
+    top: -67px;
+    left: 145px;
+    padding-top: 30px;
+}
+.roadbtn:nth-child(3) > p{
+    top: -93px;
+    left: -362px;
+}
+.roadbtn:nth-child(4) > p{
+    top: -83px;
+    left: 113px;
+}
+

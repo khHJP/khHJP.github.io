@@ -1,0 +1,102 @@
+.aboutwrap {
+    width: 600px;
+    height: 560px;
+    background-color: rgba(82, 47, 100, 0.584);
+    position: relative;
+    z-index: 3;
+    margin: 0 auto;
+    /* display: none; */
+    border-radius: 15px;
+    transform: translate(0, 415px);
+    animation: load_about 3s 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    
+}
+
+@keyframes load_about{
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.skill {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(231, 180, 53);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.cirwrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 38px;
+    position: relative;
+
+}
+
+.light {
+    position: absolute;
+    background-color:  rgb(89 51 139 / 72%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#cir1 > .light {
+    transform: translate(80px, 0px);
+}
+#cir2 > .light {
+    transform: translate(47px, 0px);
+}
+#cir3 > .light {
+    transform: translate(33px, 0px);
+}
+#cir4 > .light {
+    transform: translate(33px, 0px);
+}
+#cir5 > .light {
+    transform: translate(23px, 0px);
+}
+
+
+/* 요소높이조절 */
+#cir2, #cir4 {
+    top: 40px;
+}
+
+#cir3 {
+    top: 60px;
+}
+
+.txt {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 140px;
+    margin-top: 90px;
+}
+td {
+    padding: 8px;
+}
+
+.title {
+    color: rgb(227, 180, 53);
+}

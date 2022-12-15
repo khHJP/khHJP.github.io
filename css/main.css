@@ -1,0 +1,169 @@
+/* 전체높이 100%, margin삭제 */
+body {
+    background-image: url(../images/background.jpg); 
+    background-size: contain; 
+    margin: 0 0;
+    position: relative;
+    z-index: -100;
+    overflow: hidden; /* 스크롤방지  */
+}
+    
+
+/* 
+    컨테이너 
+*/
+#container {
+    /*  폭 1024지정, 중앙정렬 */
+    width: 1024px; 
+    margin: 0 auto; 
+    /* 높이 100%, 위아래 패딩 4% */
+    height: 100vh; 
+    padding: 120px 0; 
+}
+/* 메인 배경색 */
+#mainback {
+    background: linear-gradient(rgba(0, 0, 0, 0.656),#301c5773);
+    position: absolute;
+    width: 975px;
+    height: 760px;
+    margin: 0, auto;
+    z-index: -2;
+}
+/* 내부프레임 */
+#frame {
+    position: absolute;
+    width: 1024px;
+    height: 800px;
+    background-image: url('../images/프레임.png');
+    margin: 0, auto;
+    z-index: -1;
+    transform: translate(-24px, -16px);
+}
+
+
+
+/* 
+    main영역 
+*/
+#main {
+    width: 975px;
+    height: 760px;
+    /* 빠져나간 장식요소 숨기기 */
+    overflow: hidden; 
+    position: relative;
+    margin: 0, auto;
+}
+/* 메인 내부 컨텐츠 안쪽으로 조절*/
+/* #main > * {
+    margin: 10px 12px;
+} */
+
+
+/* 
+    헤더영역  
+*/
+header {
+    height: 170px;
+    /* 헤더 내부 nav 요소 중앙정렬*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+}
+/* navi 클래스 row정렬 */
+.navi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+.navi li {
+    /* 메뉴요소간 간격 */
+    margin: 0 30px; 
+    /* 메뉴요소 크기, 색상, radius, 불렛삭제*/
+    list-style: none;
+}
+/* 메뉴아이콘 위치 조정 */
+.top {
+    transform: translate(0, -12px);
+}
+.middle {
+    transform: translate(0, 3px);
+}
+.bottom {
+    transform: translate(0, 48px);
+}
+/* 4, 5번메뉴는 이미지 반전 */
+#roadmap {
+    transform: scaleX(-1);
+}
+#join {
+    transform: scaleX(-1) translate(0, 48px);
+}
+
+
+/* 
+    컨텐츠영역
+*/
+#content {
+    height: 570px;
+    color: white;
+    text-align: center;
+    margin: unset;
+}
+.mainimg {
+    padding-top: 32px;
+}
+
+
+
+/* 
+    decoration
+*/
+/* 원형장식 */
+.deco .circle {
+    position: absolute;
+    left: -11px;
+    top: 610px;
+    animation: rotate_circle 5s linear infinite;
+    transform-origin: 50% 50%;
+    z-index: 300;
+}
+@keyframes rotate_circle{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 큰 모빌 */
+.deco .fstmobile {
+    position: absolute;
+    left: 798px;
+    top: -458px;
+    animation: mobiledown_fst 2s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes mobiledown_fst {
+    100% {
+        transform: translate(0px, 356px);
+    }
+}
+
+/* 작은 모빌 */
+.deco .secmobile {
+    position: absolute;
+    left: 800px;
+    top: -847px;
+    animation: mobiledown_sec 2.7s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mobiledown_sec {
+    100% {
+        transform: translate(0px, 620px);
+    }
+}
+
